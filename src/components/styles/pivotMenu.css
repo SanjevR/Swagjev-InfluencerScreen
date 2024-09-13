@@ -1,0 +1,49 @@
+.container {
+    width: 357px;
+    height: auto; 
+    max-width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 0 auto;
+}
+
+.menuRectangle {
+    width: 141px; 
+    height: 133px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 37px; 
+    position: relative;
+    text-align: center; 
+}
+
+.menuRectangle .menuTitle {
+    position: absolute;
+    top: -30px; 
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.menuRectangle .iconClass {
+    position: absolute;
+    top: -50px; 
+    left: 0;
+    right: 0;
+    font-size: 15px;
+}
+
+.menuRectangle .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menuRectangle:nth-child(odd) {
+    margin-right: 34px; 
+}

@@ -1,0 +1,228 @@
+
+/*Recon Form ****************************************************/
+.form-recon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.form-recon > div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.form-recon label {
+    display: flex;
+    gap: 4px;
+}
+
+.form-recon label span {
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-recon label input {
+    height: 24px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-recon select{
+    height: 24px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-recon button {
+    height: 24px;
+    width: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    right: 30px;
+}
+
+
+
+
+/*recon table container ****************************************************/
+
+.recon-table-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+
+}
+
+.recon-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 60px;
+}
+
+.recon-rule-table-container,
+.recon-basis-table-container,
+.recon-details-table-container,
+.recon-criteriaD-table-container,
+.recon-criteria-table-container,
+.recon-attribute-table-container {
+    flex: 1;
+    max-height: 301px;
+
+}
+
+
+.recon-details-table-container {
+    margin-left: -120px;
+}
+
+.recon-rule-table-container,
+.recon-details-table-container,
+.recon-criteria-table-container,
+.recon-basis-table-container,
+.recon-criteriaD-table-container,
+.recon-attribute-table-container {
+    width: calc(50% - 30px);
+}
+/*recon hr ****************************************************/
+
+.hr-gradient {
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(#f0fbff, #b7d5fd);
+    margin: 10px;
+);
+}
+
+.hr-gradient2{
+    border: 0;
+    height: 0;
+    margin: 30px;
+    top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*recon confirm dialog********************************************/
+.modal-confirmDialog{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+}
+/*Class from the library*/
+.popup-content {
+    width: 400px;
+    max-width: 600px;
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 2px solid #bbb;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+.close-confirmDialog{
+    float: right;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+
+}
+
+.content-confirmDialog{
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: left;
+    flex-direction: row;
+
+}
+.title-confirmDialog{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.icon-confirmDialog{
+    padding: 5px;
+    /*top: 10px;*/
+
+    font-size: 14px ;
+}
+.header-confirmDialog {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.accept-option-confirmDialog,
+.delete-option-confirmDialog,
+.cancel-option-confirmDialog{
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delete-option-confirmDialog{
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius:4px ;
+}
+
+.cancel-option-confirmDialog{
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 4px;
+}
+
+.delete-option-confirmDialog:hover{
+    background-color: #c9302c;
+}
+.cancel-option-confirmDialog:hover{
+    background-color: #bbb;
+}
+
+.footer-confirmDialog{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.divider-confirmDialog {
+    display: block;
+    border-top: 1px solid #bbb;
+    margin: 10px 0;
+    clear: both;
+}
+
+

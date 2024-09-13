@@ -1,0 +1,23 @@
+FROM node:20
+ 
+# Set the working directory in the container
+WORKDIR /app
+ 
+# Copy package.json and package-lock.json to the working directory
+#COPY . .  # Copy all files, including src, package.json, public, etc.
+ 
+COPY *.json ./
+COPY index.html ./
+COPY vite.config.ts ./
+ 
+# Install dependencies
+RUN npm install
+ 
+# Copy the rest of the application code to the working directory
+COPY src/ ./src/
+ 
+# Expose port 3000 (or whichever port your app uses)
+EXPOSE 3000
+ 
+# Start the React application using the npm dev server
+CMD ["npm", "run", "dev"]
